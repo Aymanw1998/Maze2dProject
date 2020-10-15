@@ -2,7 +2,7 @@
 void GenerateMazeCommand::doCommand(std::vector<std::string> tokens)
 {
 	if (tokens.size() != 4)
-		throw "Error in syntax: correct syntax -> 'generate maze <name> <rows>'";
+		throw "Error in syntax: correct syntax -> 'generate maze <name> <size>'";
 
 	m_model->generator(tokens[2], std::stoi(tokens[3]));
 
